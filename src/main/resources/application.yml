@@ -1,0 +1,16 @@
+server:
+  port: 8686
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///invoker
+    username: invoker
+    password: invoker
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    view:
+      prefix: /static/
+      suffix: .html
